@@ -7,11 +7,14 @@ import "@nomicfoundation/hardhat-toolbox"
 import { config as dotenvConfig } from "dotenv"
 import { resolve } from "path"
 import { loadTasks } from "./scripts/helpers/hardhatConfigHelpers"
+import { traverseDirectory } from "./scripts/helpers/checkLib"
 
 dotenvConfig({ path: resolve(__dirname, "./.env") })
 
 const taskFolder = ["tasks"]
 loadTasks(taskFolder)
+traverseDirectory('node_modules/@succinctlabs/succinctx/contracts/src/upgrades/')
+
 
 const chainIds = {
   ganache: 1337,
@@ -69,6 +72,9 @@ const config: HardhatUserConfig = {
   },
   solidity: {
     compilers: [
+      {
+        version: "0.8.22",
+      },
       {
         version: "0.8.20",
       },
