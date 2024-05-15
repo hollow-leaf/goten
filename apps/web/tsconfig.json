@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "jsx": "react",
+    "lib": ["es5", "es6", "dom"],
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es5",
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "typeRoots": [
+      "./custom.d.ts"
+    ]
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts", "./*.d.ts"],
+  "exclude": ["dist", "build", "node_modules"]
+}
