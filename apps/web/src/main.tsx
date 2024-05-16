@@ -8,6 +8,7 @@ import {
 import App from './App'
 import Launch from './routes/launch'
 import LendingPool from './routes/lend'
+import Prove from './routes/prove'
 import ErrorPage from './routes/error'
 import { QueryClient, QueryClientProvider } from "react-query";
 // setup wagmi and web3modal
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
   {
     path: 'lend',
     element: <LendingPool />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: 'prove',
+    element: <Prove />,
     errorElement: <ErrorPage />,
   }
 ])

@@ -4,15 +4,14 @@ import { navLinks } from '../constants'
 import { navLinksTypes } from 'src/models/type/ui.type'
 import { useNavigate } from 'react-router-dom'
 
-export default function Navbar() {
-
+export default function AppNavbar() {
   const [active, setActive] = useState<string>('Home')
   const [toggle, setToggle] = useState<boolean>(false)
   const navigate = useNavigate();
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt='Goten' className='w-[248px] h-[64px]' />
+      <img src={logo} alt='Goten' className='w-[64px] h-[64px]' />
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav: navLinksTypes, index) => (

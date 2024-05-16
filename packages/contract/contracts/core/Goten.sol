@@ -13,7 +13,7 @@ contract Goten is ERC20{
     mapping(address => string) public availMiner;
 
     mapping(address => uint256) public availHash;
-    constructor(address _token) ERC20("Gohan Reward Token", "Gohan"){
+    constructor(address _token) ERC20("Goten Reward Token", "Goten"){
         token = IERC20(_token);
     }
 

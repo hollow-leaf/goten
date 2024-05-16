@@ -15,7 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'launch': "url(https://cdn.streamelements.com/static/user/background_default.jpg)",
-        'launch-profile': "url(https://cdn.streamelements.com/static/user/tipping_default.jpg)"
+        'launch-profile': "url(public/bg.jpeg)"
       },
     },
     screens: {

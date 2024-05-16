@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
+import { logo } from '../assets'
 import { useNavigate } from 'react-router-dom'
-import { secondNavLinks } from '../../constants'
+import { secondNavLinks } from '../constants'
 import { navLinksTypes } from 'src/models/type/ui.type'
 
 export default function Navbar() {
@@ -8,9 +9,8 @@ export default function Navbar() {
 //   const [active, setActive] = useState<string>('Home')
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
-            <div className="navbar-start">
-                <a className="text-xl text-white" href='/'>Goten</a>
-            </div>
+            <a href='/'><img src={logo} alt='Goten' className='w-[64px] h-[64px]'/></a>
+
             <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
             {secondNavLinks.map((nav: navLinksTypes, index) => (
             <li
@@ -19,9 +19,11 @@ export default function Navbar() {
                 } ${index === secondNavLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 onClick={() => {
                     if (index === 0) {
-                    navigate("/launch")
+                      navigate("/launch")
                     } else if (index === 1) {
-                    navigate("/lend");
+                      navigate("/lend");
+                    } else if (index === 2) {
+                      navigate("/prove")
                     }
                 }}
             >

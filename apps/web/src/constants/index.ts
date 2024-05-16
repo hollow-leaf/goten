@@ -24,6 +24,10 @@ export const secondNavLinks = [
     id: 'LendingPool',
     title: 'Lending Pool',
   },
+  {
+    id: 'Prove',
+    title: 'Prove',
+  },
 ];
 export const features = [
   {

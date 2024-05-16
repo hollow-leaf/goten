@@ -1,7 +1,11 @@
 use sp1_sdk::{utils, ProverClient, SP1Stdin};
-
+// reqwest and serde are used to communicate with the celestia server.
+use reqwest::{StatusCode, Client};
+use serde::{Deserialize, Serialize};
+use serde_json::json;
 /// The ELF we want to execute inside the zkVM.
 const ELF: &[u8] = include_bytes!("../../program/elf/riscv32im-succinct-zkvm-elf");
+const CELESTIA_URL: &str = "http://127.0.0.1:7000";
 
 fn main() {
     // Setup logging.
@@ -37,4 +41,6 @@ fn main() {
         .expect("saving proof failed");
 
     println!("successfully generated and verified proof for the program!")
+
+    // post proof to celestia through jsonrpc
 }
