@@ -53,7 +53,7 @@ export default function Launch() {
         <Navbar />
         <div className='row-span-5'></div>
         <label className="font-bold flex" style={{ "color": "white" }}>For no token guys (test)</label>
-        <div className='flex flex-col bg-slate-200 rounded-md p-16 h-[300px] bg-blue-950 shadow-xl gap-3'>
+        <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[300px] shadow-xl gap-3'>
           <p className='text-xl text-start text-white'>Mint your token: </p>
           <p className='text-xl text-start text-white'>Token address {ERC20Address}</p>
           <div className='join gap-4 start'>
@@ -61,7 +61,7 @@ export default function Launch() {
           </div>
         </div>
         <label className="font-bold flex" style={{ "color": "white" }}>Register as Miner (need to stake over 100 token)</label>
-        <div className='flex flex-col bg-slate-200 rounded-md p-16 h-[200px] bg-blue-950 shadow-xl gap-3 py-8' style={{"marginBottom": "10px"}}>
+        <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[200px] shadow-xl gap-3 py-8' style={{"marginBottom": "10px"}}>
           {/** multi input with amount and a string */}
           <p className='text-xl text-start text-white'>Input your avail address: </p>
           <div className='join gap-4 start'>
@@ -77,7 +77,7 @@ export default function Launch() {
           </div>
         </div>
         <label className="font-bold flex" style={{ "color": "blue" }}></label>
-        <div className='flex flex-col bg-slate-200 rounded-md p-16 h-[200px] bg-blue-950 shadow-xl gap-3'>
+        <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[200px] shadow-xl gap-3'>
           <p className='text-xl text-start text-white'>Input avail hash: </p>
           <div className='join gap-4 start'>
             <input

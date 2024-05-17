@@ -56,7 +56,7 @@ export default function Prove() {
         <Navbar />
         <div className='row-span-5'></div>
         <label className="font-bold flex" style={{ "color": "white" }}>Create Collateral Request</label>
-        <div className='flex flex-col bg-slate-200 rounded-md p-16 h-[200px] bg-blue-950g shadow-xl gap-3' style={{"marginBottom": "10px"}}>
+        <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[200px] shadow-xl gap-3' style={{"marginBottom": "10px"}}>
           <p className='text-xl text-start text-white'>Input  name: </p>
           <div className='join gap-4 start'>
             <input
