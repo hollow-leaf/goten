@@ -1,6 +1,6 @@
-export const ERC20Address = "0x15b9eEB14E166400905c42DFfec63384D5ab8CEE"
+export const ERC20Address = "0xceD74eB93fc5c0c6993a811F989779dD4FE27967"
 
-export const MinerTokenAddress = "0x062b414E562ca0983c55D4731640e2E664cB96e2"
+export const MinerTokenAddress = "0x4c85F47D01668349FCb1653EaFE901dd7324e45b"
 
 export const MinerTokenABI = [
   {
@@ -157,6 +157,12 @@ export const MinerTokenABI = [
         "indexed": false,
         "internalType": "uint256",
         "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "dstChainID",
         "type": "uint256"
       }
     ],
@@ -435,6 +441,11 @@ export const MinerTokenABI = [
       {
         "internalType": "uint256",
         "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dstChainID",
         "type": "uint256"
       }
     ],

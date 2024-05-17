@@ -3,7 +3,7 @@ import Navbar from '../components/AppNavbar'
 import styles from '../style'
 import {Footer} from '../components'
 import { useNavigate } from 'react-router-dom'
-import { Collateral, MintButton } from 'src/components/'
+import { Collateral, MintButton, MineTokenButton} from 'src/components/'
 import { ERC20Address } from 'src/services/contractAbi'
 import Lend from 'src/components/Lend'
 
@@ -76,6 +76,22 @@ export default function Prove() {
             </svg>
             <p className="text-red-500 font-bold">Warning: Only allow number and string in text box！</p>
           </div>
+        </div>
+        <label className="font-bold flex" style={{ "color": "white" }}> Miner Prover</label>
+        <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[200px] shadow-xl gap-3'>
+          <p className='text-xl text-start text-white'>Input celestia data hash: </p>
+          <div className='join gap-4 start'>
+            <input
+              type='text'
+              placeholder='Type here'
+              className='input input-bordered input-info w-full max-w-xs'
+              value={inputValue}
+              onChange={handleInputContent}
+              onKeyDown={handleEnter}
+            />
+            <MineTokenButton hash={inputValue}/>
+            </div>
+
         </div>
       </div>
     </div>

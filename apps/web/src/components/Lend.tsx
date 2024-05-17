@@ -15,6 +15,7 @@ export default function Lend(amount) {
             
         },
         onError(error) {
+            alert('Error! \n'+ JSON.stringify(error))
             console.log(error)
         },
     })

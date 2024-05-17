@@ -20,9 +20,11 @@ export default function AppNavbar() {
             className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? 'text-white' : 'text-dimWhite'
               } ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
               onClick={() => {
-                if (index === 1) {
-                  window.open('https://github.com/hollow-leaf/goten', '_blank');
+                if (index == 1) {
+                  window.open('https://docs-goten.pages.dev', '_blank');
                 } else if (index === 2) {
+                  window.open('https://github.com/hollow-leaf/goten', '_blank');
+                } else if (index === 3) {
                   navigate("/launch");
                 } else {
                   setActive(nav.title);

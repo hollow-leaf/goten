@@ -42,7 +42,7 @@ export default function Launch() {
     if (inputIdValue.trim() !== '') {
       
     } else {
-      alert('Must input avail address')
+      alert('Must input celestia address')
     }
   }
 
@@ -63,7 +63,7 @@ export default function Launch() {
         <label className="font-bold flex" style={{ "color": "white" }}>Register as Miner (need to stake over 100 token)</label>
         <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[200px] shadow-xl gap-3 py-8' style={{"marginBottom": "10px"}}>
           {/** multi input with amount and a string */}
-          <p className='text-xl text-start text-white'>Input your avail address: </p>
+          <p className='text-xl text-start text-white'>Input your celestia address: </p>
           <div className='join gap-4 start'>
           <input
               type='text'
@@ -75,22 +75,6 @@ export default function Launch() {
             />
             <MinerRegister userAddr={inputValue}/>
           </div>
-        </div>
-        <label className="font-bold flex" style={{ "color": "blue" }}></label>
-        <div className='flex flex-col bg-blue-950 rounded-md p-16 h-[200px] shadow-xl gap-3'>
-          <p className='text-xl text-start text-white'>Input avail hash: </p>
-          <div className='join gap-4 start'>
-            <input
-              type='text'
-              placeholder='Type here'
-              className='input input-bordered input-info w-full max-w-xs'
-              value={inputValue}
-              onChange={handleInputContent}
-              onKeyDown={handleEnter}
-            />
-            <MineTokenButton hash={inputValue}/>
-            </div>
-
         </div>
       </div>
     </div>

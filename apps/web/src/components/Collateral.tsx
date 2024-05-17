@@ -44,7 +44,7 @@ export default function Collateral(dstChainId) {
                     disabled={!write2}
                     onClick={() => {
                       write2({
-                          args: [100000000000000000000],
+                          args: [100000000000000000000, 11155111],
                       })
                     }}
                     style={{"borderRadius": "30px", "minWidth": "0px", "marginTop": "10px"}}
@@ -54,7 +54,7 @@ export default function Collateral(dstChainId) {
                     disabled={!write}
                     onClick={() => {
                       write({
-                          args: [MinerTokenAddress, 5100000000000000000000],
+                          args: [MinerTokenAddress, 100000000000000000000],
                       })
                     }}
                     style={{"borderRadius": "30px", "minWidth": "0px", "marginTop": "10px"}}
