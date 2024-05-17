@@ -102,9 +102,7 @@ const config: HardhatUserConfig = {
       sepolia: process.env.ETHERSCAN_API_KEY || "",
       mainnet: process.env.ETHERSCAN_API_KEY || "",
       cardona: process.env.POLYGONSCAN_API_KEY || "",
-      mantleSepolia: "NO_API_KEY",
       baseSepolia: process.env.BASESCAN_API_KEY || "",
-      opAvail: "NO_API_KEY",
     },
     customChains: [
     ]

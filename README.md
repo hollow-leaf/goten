@@ -13,7 +13,8 @@
 - Website: [https://goten.pages.dev](https://goten.pages.dev)
 - Docs: [https://docs-goten.pages.dev](https://docs-goten.pages.dev)
 - Contract:
-  + Sepolia: []()
+  + Sepolia Token: [0xceD74eB93fc5c0c6993a811F989779dD4FE27967](https://sepolia.etherscan.io/address/0xceD74eB93fc5c0c6993a811F989779dD4FE27967#code)
+  + Sepolia Miner: [0x4c85F47D01668349FCb1653EaFE901dd7324e45b](https://sepolia.etherscan.io/address/0x4c85F47D01668349FCb1653EaFE901dd7324e45b#code)
 
 ### Abstract
 Goten is a Data Availability (DA) layer-based on-chain transaction executor focused on enhancing Layer 2 interoperability. By leveraging zk-proof systems, Goten ensures system security and transaction reliability, thereby improving the user experience across multiple chains.
@@ -23,7 +24,6 @@ Users can quickly withdraw from various Layer 2 chains and perform cross-chain t
 Validators, also known as miners, help users submit transactions on the platform, earning transaction fees and project tokens. They send pre- and post-proof data to the DA layer. To promote a decentralized system, Layer 1 token rewards are distributed on Layer 2, encouraging validators to participate as miners.
 
 ### Goten Components
-# What is Goten?
 
 Goten consists of three main components:
 
