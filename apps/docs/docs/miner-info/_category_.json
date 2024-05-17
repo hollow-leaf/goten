@@ -1,0 +1,8 @@
+{
+  "label": "miner - info",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "what goten miner need to do."
+  }
+}
