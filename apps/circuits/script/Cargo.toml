@@ -1,7 +1,7 @@
 [workspace]
 [package]
 version = "0.1.0"
-name = "gohan-sp1-avail"
+name = "gotan-sp1-tia"
 edition = "2021"
 
 [dependencies]

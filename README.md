@@ -12,6 +12,7 @@
 ### Demo Page
 - Website: [https://goten.pages.dev](https://goten.pages.dev)
 - Docs: [https://docs-goten.pages.dev](https://docs-goten.pages.dev)
+- Deck: [Canva](https://www.canva.com/design/DAGFUPMX0E8/ZQbHode-DwiUIMzt5DP3NQ/)
 - Contract:
   + Sepolia Token: [0xceD74eB93fc5c0c6993a811F989779dD4FE27967](https://sepolia.etherscan.io/address/0xceD74eB93fc5c0c6993a811F989779dD4FE27967#code)
   + Sepolia Miner: [0x4c85F47D01668349FCb1653EaFE901dd7324e45b](https://sepolia.etherscan.io/address/0x4c85F47D01668349FCb1653EaFE901dd7324e45b#code)
